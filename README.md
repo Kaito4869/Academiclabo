@@ -12,8 +12,8 @@
 
 ### Association
 
-* has_many :posts
-* has_many :comments
+- has_many :posts
+- has_many :comments
 
 ## posts table
 
