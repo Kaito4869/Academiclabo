@@ -1,3 +1,11 @@
 <%= render "shared/header" %>
 <div class='main'>
+  <div>
+    <%= render partial: 'post', collection: @posts %>
+    <%= link_to(new_post_path, class: 'post-btn') do %>
+      <span class='post-btn-text'>投稿する</span>
+      <%= image_tag 'pencil.png' , size: '185x50' ,class: "post-btn-icon" %>
+    <% end %>
+  </div>
 </div>
+<%= render "shared/footer" %>

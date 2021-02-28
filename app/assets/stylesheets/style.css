@@ -40,7 +40,7 @@
   width: 5vh;
   border: 0;
   cursor: pointer;
-  background-color: #3ccace;
+  background-color: #BBBBBB;
   padding: 8px;
 }
 
@@ -106,12 +106,16 @@
   color: #333333;
 }
 
+.footer {
+  height: 200px;
+  width: 100%;
+}
+
 /*新規登録*/
 
 .new-header {
   display: flex;
   justify-content: center;
-  background-color: #f5f5f5;
   padding: 20px 0;
 }
 
@@ -124,7 +128,6 @@
   width: 100%;
   min-width: 800px;
   height: 100%;
-  background-color: #f5f5f5;
   display: flex;
   justify-content: center;
 }
@@ -145,7 +148,6 @@
 
 .form-header-text {
   line-height: 100px;
-  border-bottom: 1px solid #f5f5f5;
   font-weight: bold;
 }
 
@@ -174,6 +176,7 @@
 .indispensable {
   color: #fff;
   background-color: red;
+  padding: 5px;
 }
 
 .input-default {
@@ -188,10 +191,14 @@
   resize: none;
 }
 
-.info-text {
+.info-text1 {
   font-size: 15px;
   margin-top: 3px;
-  margin-bottom: 10px;
+}
+
+.info-text2 {
+  font-size: 15px;
+  margin-bottom: 20px;
 }
 
 .form-info-header {
@@ -234,13 +241,6 @@
   cursor: pointer;
 }
 
-.register-info {
-  margin: 30px 180px 0 0;
-  color: #0099e8;
-  text-align: right;
-  cursor: pointer;
-}
-
 /*ログイン*/
 .login-btn {
   width: 50%;
@@ -261,4 +261,94 @@
 .login-flash-message {
   text-align: center;
   color: red;
+}
+
+/*新規投稿ボタン*/
+.post-btn {
+  width: 120px;
+  background: #fff;
+  text-align: center;
+  border-radius: 4%;
+  bottom: 32px;
+  right: 32px;
+  position: fixed;
+  padding: 15px;
+  text-decoration: none;
+}
+
+.post-btn-text {
+  color: black;
+  display: block;
+  font-size: 18px;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+
+.post-btn-icon {
+  width: 60%;
+}
+
+/*新規投稿ページ*/
+.items-sell-main {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.items-sell-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.weight-bold-text {
+  margin-bottom: 20px;
+}
+
+.click-upload {
+  margin-bottom: 20px;
+}
+
+.posts-text {
+  margin-bottom: 20px;
+}
+
+.post-btn-contents {
+  font-size: 18px;
+}
+
+.post-create-btn {
+  background-color: red;
+  color: #fff;
+  font-weight: bold;
+  border: 1px #fff solid;
+  width: 100px;
+  height: 50px;
+}
+
+/*投稿一覧表示*/
+
+.card {
+  margin: 40px 20px;
+  border: 1px black solid;
+  padding: 20px;
+  background-color: #EEEEEE;
+}
+
+.card_img {
+  margin-bottom: 16px;
+  height: 200px;
+  width: 300px;
+}
+
+.card_summary {
+  font-size: 16px;
+}
+
+.card_user {
+  display: block;
+  font-size: 20px;
+  color: black;
+  text-align: right;
+  text-decoration: none;
 }

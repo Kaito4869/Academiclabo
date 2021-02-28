@@ -1,0 +1,30 @@
+<div class="new-header">
+  <%= link_to image_tag("26022021154125A.png", class:"new-logo"), "/" %>
+</div>
+<div class="items-sell-main">
+  <%= form_with model: @post, local: true do |f| %>
+    <h2 class="items-sell-title">新規投稿の情報を入力</h2>
+    <%#= render 'shared/error_messages', model: f.object %>
+
+    <div class="img-upload">
+      <div class="weight-bold-text">
+        投稿画像をクリックしてファイルをアップロードしてください
+      </div>
+      <div class="click-upload">
+        <%= f.file_field :image, id:"post-image" %>
+      </div>
+    </div>
+    <div class="new-posts">
+      <div class="items-explain">
+        <div class="weight-bold-text">
+          投稿文を記入してください
+          <span class="indispensable">必須</span>
+        </div>
+        <%= f.text_area :text, class:"posts-text", id:"post-info", placeholder:"投稿文" %>
+      </div>
+    </div>
+    <div class="post-btn-contents">
+      <%= f.submit "投稿する" ,class:"post-create-btn" %>
+    </div>
+  <% end %>
+</div>
