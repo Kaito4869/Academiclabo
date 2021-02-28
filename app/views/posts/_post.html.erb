@@ -1,0 +1,11 @@
+<div class="card">
+  <% if post.image.present? %>
+    <%= link_to image_tag(post.image, class: :card_img ), post_path(post) %>
+  <% end %>
+  <div class="card_body">
+    <p class="card_summary">
+      <%= post.text %>
+    </p>
+    <%= link_to "by #{post.user.nickname}", "#", class: :card_user %>
+  </div>
+</div>
