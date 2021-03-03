@@ -6,6 +6,10 @@
     <p class="card_summary">
       <%= post.text %>
     </p>
+    <%# if current_user.id == @post.user.id  %>
+      <%= link_to "編集", edit_post_path(post), method: :get, class: "post-edit-btn" %>
+      <%= link_to "削除", post_path(post), method: :delete, class:"post-destroy-btn" %>
+    <%# end %>
     <%= link_to "by #{post.user.nickname}", "#", class: :card_user %>
   </div>
 </div>

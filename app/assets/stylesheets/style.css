@@ -289,13 +289,13 @@
 }
 
 /*新規投稿ページ*/
-.items-sell-main {
+.posts-main {
   display: flex;
   justify-content: center;
   text-align: center;
 }
 
-.items-sell-title {
+.posts-title {
   font-size: 20px;
   font-weight: bold;
   margin: 20px 0;
@@ -346,6 +346,24 @@
 }
 
 .card_user {
+  display: block;
+  font-size: 20px;
+  color: black;
+  text-align: right;
+  text-decoration: none;
+}
+
+/*編集・削除機能*/
+
+.post-edit-btn {
+  display: block;
+  font-size: 20px;
+  color: black;
+  text-align: right;
+  text-decoration: none;
+}
+
+.post-destroy-btn {
   display: block;
   font-size: 20px;
   color: black;
