@@ -1,4 +1,6 @@
 class PostsController < ApplicationController
+  before_action :set_post, except: [:index, :new, :create]
+
   def index
     @posts = Post.includes(:user).order('created_at DESC')
   end
@@ -16,7 +18,31 @@ class PostsController < ApplicationController
     end
   end
 
+  def edit
+  end
+
+  def update
+    @post.update(post_params)
+    if @post.save
+      redirect_to posts_path
+    else
+      render :edit
+    end
+  end
+
+  def destroy
+    if @post.destroy
+      redirect_to root_path
+    else
+      redirect_to root_path
+    end
+  end
+
   private
+
+  def set_post
+    @post = Post.find(params[:id])
+  end
 
   def post_params
     params.require(:post).permit(:text, :image).merge(user_id: current_user.id)

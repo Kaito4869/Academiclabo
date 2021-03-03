@@ -3,7 +3,7 @@
 </div>
 <div class="posts-main">
   <%= form_with model: @post, local: true do |f| %>
-    <h2 class="posts-title">新規投稿の情報を入力</h2>
+    <h2 class="posts-title">変更する情報を入力</h2>
     <%#= render 'shared/error_messages', model: f.object %>
 
     <div class="img-upload">
@@ -24,7 +24,7 @@
       </div>
     </div>
     <div class="post-btn-contents">
-      <%= f.submit "投稿する" ,class:"post-create-btn" %>
+      <%= f.submit "更新する" ,class:"post-create-btn" %>
     </div>
   <% end %>
 </div>
