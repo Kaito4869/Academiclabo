@@ -1,0 +1,52 @@
+<div class="new-header">
+  <%= link_to image_tag("26022021154125A.png", class:"new-logo"), "/" %>
+</div>
+<main class="main">
+  <div class="inner">
+    <div class="post_wrapper">
+      <%= link_to "by #{@post.user.nickname}", "#", class: :post_user %>
+      <% if current_user == @post.user%>
+        <div class="post_manage">
+          <%= link_to "編集", edit_post_path(@post), method: :get, class: "post-edit-btn" %>
+          <%= link_to "削除", post_path(@post), method: :delete, class:"post-destroy-btn" %>
+        </div>
+      <% end %>
+      <div class="post_image">
+        <% if @post.image.present? %>
+          <%= image_tag @post.image %>
+        <% end %>
+      </div>
+      <div class="post_body">
+        <div class="post_detail">
+          <p class="detail_title">投稿文</p>
+          <p class="detail_message">
+            <%= @post.text %>
+          </p>
+        </div>
+      </div>
+      <div class="post_comments">
+        <% if user_signed_in? %>
+          <%= form_with model: [@post, @comment], local: true do |f|%>
+            <div class="comment-form">
+              <div class="field">
+                <%= f.label :text, "コメント", class:"comment-title" %><br />
+                <%= f.text_area :text, class:"comment-field" %>
+              </div>
+              <div class="actions">
+                <%= f.submit "送信する", class: :post_comment_btn  %>
+              </div>
+            </div>
+          <% end %> 
+        <% end %>
+        <ul class="comments_lists">
+          <% @comments.each do |comment| %>
+            <li class="comments_list">
+              <%= link_to "#{comment.user.nickname}：", "#", class: :comment_user %>
+              <%= comment.text%>
+            </li>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+  </div>
+</main>

@@ -353,20 +353,138 @@
   text-decoration: none;
 }
 
+.show-form {
+  text-align: right;
+}
+
+.show_btn {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+/*詳細ページ*/
+.post_wrapper{
+  min-height: calc(100vh - 161px);
+}
+
+.post_hedding{
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.post_user{
+  display: block;
+  font-size: 20px;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+}
+
+.post_image{
+  width: 40%;
+  margin: 0 auto;
+  padding: 16px 0;
+}
+
+.post_detail{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.detail_title{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.detail_message {
+  font-size: 20px;
+}
+
+.post_manage{
+  display: flex;
+  justify-content: center;
+  padding-top: 16px;
+}
+
 /*編集・削除機能*/
 
 .post-edit-btn {
   display: block;
-  font-size: 20px;
+  font-size: 25px;
   color: black;
   text-align: right;
   text-decoration: none;
+  margin-right: 10px;
 }
 
 .post-destroy-btn {
   display: block;
-  font-size: 20px;
+  font-size: 25px;
   color: black;
   text-align: right;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.post_btn{
+  display: block;
+  padding: 0.4em 1.6em;
+  font-size: 0.4em;
+  color: #999;
+  text-decoration: none;
+  user-select: none;
+  border: 1px #999 solid;
+  border-radius: 3px;
+  transition: 0.4s ease;
+  margin: 0 4px;
+}
+
+.post_btn:hover{
+  color: #fff;
+  background: #999;
+}
+
+.post_comments{
+  background-color: #f6f6f6;
+  padding: 20px;
+  margin: 20px auto 100px;
+  text-align: center;
+}
+
+.comment-title {
+  font-size: 20px;
+}
+
+.comment-field {
+  height: 100px;
+  width: 600px;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.post_comment_btn {
+  font-size: 18px;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+.comments_lists{
+  padding-left: 20px;
+}
+
+.comments_list{
+  list-style-type: none;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.comment_user{
+  font-size: 20px;
+  color: black;
   text-decoration: none;
 }
