@@ -9,6 +9,6 @@
     <div class="show-form">
       <%= link_to "詳細", post_path(post), class: :show_btn %>
     </div>
-    <%= link_to "by #{post.user.nickname}", "#", class: :card_user %>
+    <%= link_to "by #{post.user.nickname}", user_path(post.user), class: :card_user %>
   </div>
 </div>

@@ -1,0 +1,30 @@
+<div class="new-header">
+  <%= link_to image_tag("26022021154125A.png", class:"new-logo"), "/" %>
+</div>
+<div class="main">
+  <div class="inner">
+    <div class="user_wrapper">
+      <h2 class="page-heading">
+        <%= "#{@user.nickname}さんの情報"%>
+      </h2>
+      <table class="table">
+        <tbody>
+          <tr>
+            <th class="table_col1">ニックネーム</th>
+            <td class="table_col2"><%= @user.nickname %></td>
+          </tr>
+          <tr>
+            <th class="table_col1">所属</th>
+            <td class="table_col2"><%= @user.occupation %></td>
+          </tr>
+        </tbody>
+      </table>
+      <h2 class="page-heading">
+        <%= "#{@user.nickname}さんの投稿" %>
+      </h2>
+      <div class="user_card">
+        <%= render partial: 'posts/post', collection: @user.posts %>
+      </div>
+    </div>
+  </div>
+</div>
