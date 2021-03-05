@@ -4,7 +4,7 @@
 <main class="main">
   <div class="inner">
     <div class="post_wrapper">
-      <%= link_to "by #{@post.user.nickname}", "#", class: :post_user %>
+      <%= link_to "by #{@post.user.nickname}", user_path(@post.user), class: :post_user %>
       <% if current_user == @post.user%>
         <div class="post_manage">
           <%= link_to "編集", edit_post_path(@post), method: :get, class: "post-edit-btn" %>
