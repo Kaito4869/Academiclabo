@@ -1,5 +1,7 @@
 class PostsController < ApplicationController
   before_action :set_post, except: [:index, :new, :create]
+  before_action :authenticate_user!, except: [:index, :show]
+  before_action :contributor_confirmation, only: [:edit, :update, :destroy]
 
   def index
     @posts = Post.includes(:user).order('created_at DESC')
@@ -47,6 +49,10 @@ class PostsController < ApplicationController
 
   def set_post
     @post = Post.find(params[:id])
+  end
+
+  def contributor_confirmation
+    redirect_to root_path unless current_user == @post.user
   end
 
   def post_params
