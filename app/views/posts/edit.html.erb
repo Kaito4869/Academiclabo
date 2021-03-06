@@ -4,7 +4,7 @@
 <div class="posts-main">
   <%= form_with model: @post, local: true do |f| %>
     <h2 class="posts-title">変更する情報を入力</h2>
-    <%#= render 'shared/error_messages', model: f.object %>
+    <%= render 'shared/error_messages', model: f.object %>
 
     <div class="img-upload">
       <div class="weight-bold-text">

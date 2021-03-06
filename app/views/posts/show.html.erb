@@ -13,6 +13,7 @@
       <% end %>
       <div class="post_image">
         <% if @post.image.present? %>
+          <p class="detail_title">投稿画像</p>
           <%= image_tag @post.image %>
         <% end %>
       </div>

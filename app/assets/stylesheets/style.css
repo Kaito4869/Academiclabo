@@ -107,7 +107,7 @@
 }
 
 .footer {
-  height: 200px;
+  height: 130px;
   width: 100%;
 }
 
@@ -386,6 +386,7 @@
   width: 40%;
   margin: 0 auto;
   padding: 16px 0;
+  text-align: center;
 }
 
 .post_detail{
@@ -419,7 +420,9 @@
   color: black;
   text-align: right;
   text-decoration: none;
-  margin-right: 10px;
+  margin-right: 20px;
+  border: 1px solid black;
+  padding: 3px 5px;
 }
 
 .post-destroy-btn {
@@ -428,7 +431,9 @@
   color: black;
   text-align: right;
   text-decoration: none;
-  margin-left: 10px;
+  margin-left: 20px;
+  border: 1px solid black;
+  padding: 3px 5px;
 }
 
 .post_btn{
@@ -458,13 +463,14 @@
 
 .comment-title {
   font-size: 20px;
+  margin-bottom: 10px;
 }
 
 .comment-field {
   height: 100px;
   width: 600px;
   font-size: 18px;
-  margin-bottom: 5px;
+  margin: 10px 0;
 }
 
 .post_comment_btn {
@@ -525,4 +531,17 @@
   font-weight: bold;
   margin-bottom: 20px;
   text-align: center;
+}
+
+/*エラーメッセージの表示*/
+.error-alert {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5vh;
+}
+
+.error-message {
+  font-size: 1.3vw;
+  list-style: circle;
+  color: rgb(182, 48, 0);
 }
