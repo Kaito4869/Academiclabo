@@ -23,6 +23,22 @@
         <%= f.text_area :text, class:"posts-text", id:"post-info", placeholder:"投稿文" %>
       </div>
     </div>
+    <div class="psot-detail">
+      <div class="grade-form">
+        <div class="weight-bold-text">
+          学年
+          <span class="indispensable">必須</span>
+        </div>
+        <%= f.collection_select(:grade_id, Grade.all, :id, :name, {}, {class:"select-box", id:"post-grade"}) %>
+      </div>
+      <div class="subject-form">
+        <div class="weight-bold-text">
+          科目
+          <span class="indispensable">必須</span>
+        </div>
+        <%= f.collection_select(:subject_id, Subject.all, :id, :name, {}, {class:"select-box", id:"post-subject"}) %>
+      </div>
+    </div>
     <div class="post-btn-contents">
       <%= f.submit "投稿する" ,class:"post-create-btn" %>
     </div>
