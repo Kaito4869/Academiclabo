@@ -1,7 +1,22 @@
 <%= render "shared/header" %>
 <div class='main'>
-  <div>
+  <div class="left-box">
+    <p>Academiclabo</p>
+  </div>
+  <div class="center-box">
     <%= render partial: 'post', collection: @posts %>
+  </div>
+  <div class="right-box">
+    <ul class="grade-list">
+      <li><%= link_to '中学1年生', "#", class: "grade_link" %></li>
+      <li><%= link_to '中学2年生', "#", class: "grade_link" %></li>
+      <li><%= link_to '中学3年生', "#", class: "grade_link" %></li>
+      <li><%= link_to '高校1年生', "#", class: "grade_link" %></li>
+      <li><%= link_to '高校2年生', "#", class: "grade_link" %></li>
+      <li><%= link_to '高校3年生', "#", class: "grade_link" %></li>
+    </ul>
+  </div>
+  <div>
     <%= link_to(new_post_path, class: 'post-btn') do %>
       <span class='post-btn-text'>投稿する</span>
       <%= image_tag 'pencil.png' , size: '185x50' ,class: "post-btn-icon" %>

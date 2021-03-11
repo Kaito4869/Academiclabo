@@ -10,5 +10,5 @@ class Subject < ActiveHash::Base
   ]
 
   include ActiveHash::Associations
-  has_many :posts
+  has_many :tags
 end

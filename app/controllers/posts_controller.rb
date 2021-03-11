@@ -8,7 +8,7 @@ class PostsController < ApplicationController
   end
 
   def new
-    @post = Post.new
+    @post = PostsTag.new
   end
 
   def show
@@ -17,8 +17,9 @@ class PostsController < ApplicationController
   end
 
   def create
-    @post = Post.new(post_params)
-    if @post.save
+    @post = PostsTag.new(post_params)
+    if @post.valid? 
+      @post.save
       redirect_to root_path
     else
       render :new
@@ -56,6 +57,6 @@ class PostsController < ApplicationController
   end
 
   def post_params
-    params.require(:post).permit(:text, :image, :grade_id, :subject_id).merge(user_id: current_user.id)
+    params.require(:posts_tag).permit(:text, :image, :grade_id, :subject_id).merge(user_id: current_user.id)
   end
 end
