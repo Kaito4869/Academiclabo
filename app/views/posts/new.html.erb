@@ -3,18 +3,19 @@
 </div>
 <div class="posts-main">
   <%= form_with model: @post, url: posts_path, local: true do |f| %>
-    <h2 class="posts-title">新規投稿の情報を入力</h2>
+    <h2 class="new-top">新規投稿の情報を入力</h2>
     <%= render 'shared/error_messages', model: f.object %>
 
-    <div class="img-upload">
-      <div class="weight-bold-text">
-        投稿画像をクリックしてファイルをアップロードしてください
-      </div>
-      <div class="click-upload">
-        <%= f.file_field :image, id:"post-image" %>
-      </div>
-    </div>
     <div class="new-posts">
+      <div class="items-explain">
+        <div class="weight-bold-text">
+          タイトルを記入してください
+          <span class="indispensable">必須</span>
+        </div>
+        <div class="post-field">
+          <%= f.text_area :title, class:"posts-title", id:"post-info", placeholder:"タイトル" %>
+        </div>
+      </div>
       <div class="items-explain">
         <div class="weight-bold-text">
           投稿文を記入してください
@@ -25,17 +26,25 @@
         </div>
       </div>
     </div>
+    <div class="img-upload">
+      <div class="weight-bold-text">
+        投稿画像をクリックしてファイルをアップロードしてください
+      </div>
+      <div class="click-upload">
+        <%= f.file_field :image, id:"post-image" %>
+      </div>
+    </div>
     <div class="psot-detail">
       <div class="grade-form">
         <div class="weight-bold-text">
-          学年を記入してください　
+          学年を選択してください
           <span class="indispensable">必須</span>
         </div>
         <%= f.collection_select(:grade_id, Grade.all, :id, :name, {}, {class:"grade-select"}) %>
       </div>
       <div class="grade-form">
         <div class="weight-bold-text">
-          学年を記入してください　
+          科目を選択してください
           <span class="indispensable">必須</span>
         </div>
         <%= f.collection_select(:subject_id, Subject.all, :id, :name, {}, {class:"grade-select"}) %>

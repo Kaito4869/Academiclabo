@@ -272,14 +272,24 @@
   text-align: center;
 }
 
-.posts-title {
-  font-size: 20px;
+.new-top {
+  font-size: 30px;
   font-weight: bold;
-  margin: 20px 0;
+  margin-bottom: 20px;
+}
+
+.posts-title {
+  font-size: 18px;
+  margin-bottom: 20px;
+  height: 40px;
+  width: 450px;
+  padding: 6px 0 0 2px;
+  align-items: center;
 }
 
 .weight-bold-text {
   margin-bottom: 20px;
+  font-weight: bold;
 }
 
 .select-box {
@@ -293,7 +303,9 @@
 }
 
 .posts-text {
+  font-size: 18px;
   margin-bottom: 20px;
+  padding: 2px 0 0 2px;
   height: 200px;
   width: 450px;
 }
@@ -309,6 +321,7 @@
   border: 1px #fff solid;
   width: 100px;
   height: 50px;
+  margin-bottom: 40px;
 }
 
 .input-tag {
@@ -344,7 +357,7 @@
 }
 
 .card_summary {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .card_user {
@@ -352,7 +365,7 @@
   font-size: 20px;
   color: black;
   text-align: right;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .show-form {
@@ -363,6 +376,7 @@
   text-decoration: none;
   color: black;
   font-size: 20px;
+  text-decoration: underline;
 }
 
 .left-box {
@@ -380,10 +394,13 @@
   margin: 0 0 20px 70px;
 }
 
+.grade-child {
+  margin-bottom: 10px;
+}
+
 .grade_link {
   text-decoration: underline;
   color: black;
-  margin-bottom: 20px;
 }
 
 .subject-list {
