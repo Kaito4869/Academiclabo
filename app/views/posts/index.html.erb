@@ -7,14 +7,9 @@
     <%= render partial: 'post', collection: @posts %>
   </div>
   <div class="right-box">
-    <ul class="grade-list">
-      <li class="grade-child"><%= link_to '中学1年生', "#", class: "grade_link" %></li>
-      <li class="grade-child"><%= link_to '中学2年生', "#", class: "grade_link" %></li>
-      <li class="grade-child"><%= link_to '中学3年生', "#", class: "grade_link" %></li>
-      <li class="grade-child"><%= link_to '高校1年生', "#", class: "grade_link" %></li>
-      <li class="grade-child"><%= link_to '高校2年生', "#", class: "grade_link" %></li>
-      <li class="grade-child"><%= link_to '高校3年生', "#", class: "grade_link" %></li>
-    </ul>
+    <%@tags.each do |tag| %>
+        <%= link_to tag.grade.name, post_tags_path(tag), class: "grade_link" %>
+    <%end%>
   </div>
   <div>
     <%= link_to(new_post_path, class: 'post-btn') do %>
