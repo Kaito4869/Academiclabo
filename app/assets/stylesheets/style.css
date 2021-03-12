@@ -29,7 +29,7 @@
   height: 5vh;
   display: flex;
   text-align: center;
-  margin: 0 auto 5px;
+  margin: 0 auto 20px;
 }
 
 .search-form>.input-box {
@@ -241,6 +241,7 @@
 }
 
 /*新規投稿ボタン*/
+
 .post-btn {
   width: 120px;
   background: #fff;
@@ -250,6 +251,7 @@
   right: 32px;
   position: fixed;
   padding: 15px;
+  margin-right: 26px;
   text-decoration: none;
 }
 
@@ -343,7 +345,6 @@
 }
 
 .card {
-  width: 1000px;
   border: 1px black solid;
   padding: 20px;
   background-color: #EEEEEE;
@@ -380,22 +381,27 @@
 }
 
 .left-box {
-  width: 400px;
+  width: 250px;
   padding: 20px;
+}
+
+.center-box {
+  width: calc(100% - 500px);
 }
 
 .right-box {
-  width: 400px;
-  padding: 20px;
+  width: 250px;
+  padding: 20px 0 0 80px;
 }
 
-.grade-list {
-  font-size: 20px;
-  margin: 0 0 20px 70px;
-}
-
-.grade-child {
+.grade-link {
   margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.subject-link {
+  margin-bottom: 10px;
+  font-size: 20px;
 }
 
 .grade_link {

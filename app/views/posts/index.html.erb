@@ -1,14 +1,15 @@
 <%= render "shared/header" %>
 <div class='main'>
   <div class="left-box">
-    <p>Academiclabo</p>
   </div>
   <div class="center-box">
     <%= render partial: 'post', collection: @posts %>
   </div>
   <div class="right-box">
     <%@tags.each do |tag| %>
-        <%= link_to tag.grade.name, post_tags_path(tag), class: "grade_link" %>
+      <ul>
+        <li class="grade-link"><%= link_to tag.grade.name, post_tags_path(tag), class: "grade_link" %></li>
+      </ul>
     <%end%>
   </div>
   <div>
