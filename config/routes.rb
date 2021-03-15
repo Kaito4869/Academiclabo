@@ -4,6 +4,9 @@ Rails.application.routes.draw do
   resources :posts, only: [:new, :create, :show, :edit, :update, :destroy] do
     resources :comments, only: [:create]
     resources :tags, only: [:index]
+    collection do
+      get 'search'
+    end
   end
   resources :users, only: :show
 end
