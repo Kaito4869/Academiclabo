@@ -5,7 +5,7 @@ class PostsController < ApplicationController
 
   def index
     @posts = Post.includes(:user).order('created_at DESC')
-    @tags = Tag.all.order('grade_id ASC')
+    @tags = Tag.all.order('subject_id ASC')
   end
 
   def new
@@ -58,6 +58,6 @@ class PostsController < ApplicationController
   end
 
   def post_params
-    params.require(:posts_tag).permit(:title, :text, :image, :grade_id).merge(user_id: current_user.id)
+    params.require(:posts_tag).permit(:title, :text, :image, :subject_id).merge(user_id: current_user.id)
   end
 end
