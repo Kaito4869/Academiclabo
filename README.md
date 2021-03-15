@@ -19,6 +19,7 @@
 
 | Column                              | Type       | Options           |
 |-------------------------------------|------------|-------------------|
+| title                               | string     | null: false       |
 | text                                | text       | null: false       |
 | user                                | references | foreign_key: true |
 
@@ -26,6 +27,8 @@
 
 - belongs_to :user
 - has_many :comments
+- has_many :post_tag_relations, dependent: :destroy
+- has_many :tags, through: :post_tag_relations
 
 ## comments table
 
@@ -39,3 +42,12 @@
 
 - belongs_to :post
 - belongs_to :user
+
+## tags table
+
+| Column      | Type       | Options           |
+|-------------|------------|-------------------|
+| grade_id    | integer    | null: false       |
+
+- has_many :post_tag_relations
+- has_many :posts, through: :post_tag_relations

@@ -37,10 +37,10 @@
     <div class="psot-detail">
       <div class="grade-form">
         <div class="weight-bold-text">
-          学年を選択してください
+          科目を選択してください
           <span class="indispensable">必須</span>
         </div>
-        <%= f.collection_select(:grade_id, Grade.all, :id, :name, {}, {class:"grade-select"}) %>
+        <%= f.collection_select(:subject_id, Subject.all, :id, :name, {}, {class:"grade-select"}) %>
       </div>
     <div class="post-btn-contents">
       <%= f.submit "投稿する" ,class:"post-create-btn" %>
