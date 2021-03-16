@@ -247,11 +247,11 @@
   background: #fff;
   text-align: center;
   border-radius: 4%;
-  bottom: 32px;
+  bottom: 30px;
   right: 32px;
   position: fixed;
   padding: 15px;
-  margin-right: 26px;
+  margin-right: 30px;
   text-decoration: none;
 }
 
@@ -317,7 +317,7 @@
 }
 
 .post-create-btn {
-  background-color: red;
+  background-color: #ea352d;
   color: #fff;
   font-weight: bold;
   border: 1px #fff solid;
@@ -394,13 +394,8 @@
   padding: 20px 0 0 80px;
 }
 
-.grade-link {
-  margin-bottom: 10px;
-  font-size: 20px;
-}
-
 .subject-link {
-  margin-bottom: 10px;
+  margin: 0 30px 10px 0;
   font-size: 20px;
 }
 
@@ -560,7 +555,8 @@
 .table{
   border-collapse: collapse;
   margin-bottom: 32px;
-  width: 50%;
+  height: 150px;
+  width: 600px;
   margin-left: auto;
   margin-right: auto;
 }
