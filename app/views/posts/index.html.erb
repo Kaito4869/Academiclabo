@@ -7,7 +7,7 @@
   </div>
   <div class="right-box">
     <%@tags.each do |tag| %>
-        <p class="grade-link"><%= link_to tag.subject.name, post_tags_path(tag), class: "grade_link" %></p>
+        <p class="subject-link"><%= link_to tag.subject.name, post_tags_path(tag), class: "subject_link" %></p>
     <%end%>
   </div>
   <div>
