@@ -1,14 +1,27 @@
 <%= render "shared/header" %>
+<div class="band">
+  <div class="child-band">
+    <h1 class="band-message1">WELCOME TO</h1><br>
+    <h1 class="band-message2">ACADEMICLABO</h1>
+    <p class="band-message3">〜学問を通して人と人を繋ぐ〜</p>
+  </div>
+  <div class="img">
+    <%= image_tag("labo.jpeg")%>
+  </div>
+</div>
 <div class='main'>
   <div class="left-box">
   </div>
   <div class="center-box">
+    <h2 class="center-title">最新投稿</h2>
     <%= render partial: 'post', collection: @posts %>
   </div>
   <div class="right-box">
-    <%@tags.each do |tag| %>
-        <p class="subject-link"><%= link_to tag.subject.name, post_tags_path(tag), class: "subject_link" %></p>
-    <%end%>
+    <div class="subject">
+      <%@tags.each do |tag| %>
+          <p class="subject-link"><%= link_to tag.subject.name, post_tags_path(tag), class: "subject_link" %></p>
+      <%end%>
+    </div>
   </div>
   <div>
     <%= link_to(new_post_path, class: 'post-btn') do %>
