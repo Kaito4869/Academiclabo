@@ -11,9 +11,13 @@
           <%= link_to "削除", post_path(@post), method: :delete, class:"post-destroy-btn" %>
         </div>
       <% end %>
+      <div class="post_title">
+        <p class="detail_title">
+          <%= @post.title%>
+        </p>
+      </div>
       <div class="post_image">
         <% if @post.image.present? %>
-          <p class="detail_title">投稿画像</p>
           <div class="image-form">
             <%= image_tag @post.image, class: "show-image" %>
           </div>
@@ -21,10 +25,11 @@
       </div>
       <div class="post_body">
         <div class="post_detail">
-          <p class="detail_title">投稿文</p>
-          <p class="detail_message">
-            <%= @post.text %>
-          </p>
+          <div class="message-form">
+            <p class="detail_message">
+              <%= @post.text %>
+            </p>
+          </div>
         </div>
       </div>
       <div class="post_comments">

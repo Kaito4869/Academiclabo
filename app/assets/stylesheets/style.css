@@ -1,5 +1,4 @@
 /*トップページ*/
-
 * {
   box-sizing: border-box;
 }
@@ -50,6 +49,11 @@
 
 .search-icon {
   width: 100%;
+  transition: all 0.3s linear;
+}
+
+.rotateY {
+  transform: rotateY(360deg);
 }
 
 .band {
@@ -314,6 +318,11 @@
 
 .post-btn-icon {
   width: 60%;
+  transition: all 0.3s linear;
+}
+
+.rotateY {
+  transform: rotateY(360deg);
 }
 
 /*新規投稿ページ*/
@@ -486,6 +495,15 @@
   text-decoration: none;
 }
 
+.post_title {
+  display: flex;
+  justify-content: center;
+}
+
+.detail_title {
+  margin-top: 30px;
+}
+
 .post_image{
   width: 40%;
   margin: 0 auto;
@@ -509,7 +527,7 @@
   align-items: center;
   flex-direction: column;
   margin-bottom: 8px;
-  text-align: center;
+  text-align: left;
 }
 
 .detail_title{
@@ -517,8 +535,14 @@
   font-weight: bold;
 }
 
+.message-form {
+  width: 700px;
+  height: 100px;
+}
+
 .detail_message {
-  font-size: 20px;
+  font-size: 22px;
+  overflow-wrap: break-word;
 }
 
 .post_manage{
@@ -569,11 +593,13 @@
   background: #999;
 }
 
+/*コメント機能*/
 .post_comments{
   background-color: #f6f6f6;
   padding: 20px;
   margin: 20px auto 100px;
   text-align: center;
+  width: 700px;
 }
 
 .comment-title {
@@ -597,6 +623,7 @@
 .comments_lists{
   padding-left: 20px;
   font-size: 20px;
+  text-align: left;
 }
 
 .comments_list{
