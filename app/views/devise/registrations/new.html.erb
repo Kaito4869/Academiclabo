@@ -23,7 +23,7 @@
       <label class="form-text">学年</label>
       <span class="indispensable">必須</span>
     </div>
-    <%= f.text_field :occupation, class:"input-default", id:"occupation", placeholder:"例) 高校2年"%>
+    <%= f.collection_select(:grade_id, Grade.all, :id, :name, {}, {class:"grade-select"}) %>
   </div>
   <div class="form-group">
     <div class='form-text-wrap'>
