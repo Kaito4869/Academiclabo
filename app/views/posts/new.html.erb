@@ -42,6 +42,7 @@
         </div>
         <%= f.collection_select(:subject_id, Subject.all, :id, :name, {}, {class:"grade-select"}) %>
       </div>
+    </div>
     <div class="post-btn-contents">
       <%= f.submit "投稿する" ,class:"post-create-btn" %>
     </div>

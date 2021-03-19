@@ -31,7 +31,7 @@ class PostsController < ApplicationController
   end
 
   def update
-    @post.update(post_params)
+    @post.update(post_edit_params)
     if @post.save
       redirect_to posts_path
     else
@@ -63,6 +63,10 @@ class PostsController < ApplicationController
 
   def post_params
     params.require(:posts_tag).permit(:title, :text, :image, :subject_id).merge(user_id: current_user.id)
+  end
+
+  def post_edit_params
+    params.require(:post).permit(:title, :text, :image)
   end
 
   def move_to_index

@@ -6,6 +6,7 @@ class Post < ApplicationRecord
   has_many :post_tag_relations, dependent: :destroy
   has_many :tags, through: :post_tag_relations, dependent: :destroy
 
+  validates :title, presence: true
   validates :text, presence: true
 
   def self.search(search)
