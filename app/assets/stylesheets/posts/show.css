@@ -1,0 +1,75 @@
+/*詳細ページ*/
+.post_wrapper{
+  min-height: calc(100vh - 161px);
+}
+
+.post_hedding{
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.post_user{
+  display: block;
+  font-size: 25px;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+}
+
+.post_title {
+  display: flex;
+  justify-content: center;
+}
+
+.detail_title {
+  margin-top: 30px;
+}
+
+.post_image{
+  width: 40%;
+  margin: 0 auto;
+  padding: 16px 0;
+  text-align: center;
+}
+
+.show-image {
+  width: 50vw;
+  height: 30vw;
+  margin: 20px 0;
+}
+
+.image-form {
+  display: flex;
+  justify-content: center;
+}
+
+.post_detail{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+.detail_title{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.message-form {
+  width: 700px;
+  height: 100px;
+}
+
+.detail_message {
+  font-size: 22px;
+  overflow-wrap: break-word;
+}
+
+.post_manage{
+  display: flex;
+  justify-content: center;
+  padding-top: 16px;
+}

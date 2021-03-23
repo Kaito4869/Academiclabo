@@ -1,11 +1,15 @@
-<div class="card">
-  <div class="card_body">
-    <p class="card_summary">
-      <%= post.title %>
-    </p>
-    <div class="show-form">
-      <%= link_to "more", post_path(post), class: :show_btn %>
+<div class="col" ontouchstart="this.classList.toggle('hover');">
+  <div class="container">
+    <div class="front">
+      <div class="inner">
+        <%= post.title %>
+      </div>
     </div>
-    <%= link_to "by #{post.user.nickname}", user_path(post.user), class: :card_user %>
+    <div class="back">
+      <div class="inner">
+        <%= link_to "more", post_path(post), class: :show_btn %>
+        <%= link_to "by #{post.user.nickname}", user_path(post.user), class: :card_user %>
+      </div>
+    </div>
   </div>
 </div>

@@ -70,3 +70,5 @@ gem 'jquery-rails'
 gem 'kaminari'
 
 gem 'seed-fu'
+
+gem 'haml-rails'
