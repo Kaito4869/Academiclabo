@@ -2,13 +2,13 @@
   <%= link_to image_tag("26022021154125A.png", class:"logo"), "/" %>
 </div>
 <main class="main">
-  <div class="inner">
-    <div class="post_wrapper">
+  <div class="show-inner">
+    <div class="show_wrapper">
       <%= link_to "by #{@post.user.nickname}", user_path(@post.user), class: :post_user %>
       <% if current_user == @post.user%>
         <div class="post_manage">
-          <%= link_to "編集", edit_post_path(@post), method: :get, class: "post-edit-btn" %>
-          <%= link_to "削除", post_path(@post), method: :delete, class:"post-destroy-btn" %>
+          <%= link_to "Edit", edit_post_path(@post), method: :get, class: "post-edit-btn" %>
+          <%= link_to "Delete", post_path(@post), method: :delete, class:"post-destroy-btn" %>
         </div>
       <% end %>
       <div class="post_title">

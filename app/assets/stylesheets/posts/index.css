@@ -1,0 +1,352 @@
+.band {
+  height: 400px;
+  width: 100%;
+  background-color: #EEEEEE;
+  margin-bottom: 70px;
+  padding: 20px;
+  display: flex;
+  position: relative;
+}
+
+.child-band {
+  margin-left: 60px;
+}
+
+.band-message1 {
+  font-weight: bold;
+  font-family: arial black;
+  font-size: 60px;
+  margin-top: 20px;
+}
+
+.band-message2 {
+  font-weight: bold;
+  font-family: arial black;
+  font-size: 60px;
+  margin-left: 260px;
+}
+
+.band-message3 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-left: 100px;
+}
+
+.img {
+  margin-top: 4px;
+  position: absolute;
+  width: 36vw;
+  height: 31vh;
+  right: 30px;
+}
+
+/*新規投稿ボタン*/
+
+.post-btn {
+  width: 120px;
+  background: #fff;
+  text-align: center;
+  border-radius: 4%;
+  bottom: 30px;
+  right: 32px;
+  position: fixed;
+  padding: 15px;
+  margin-right: 30px;
+  text-decoration: none;
+}
+
+.post-btn-text {
+  color: black;
+  display: block;
+  font-size: 18px;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+
+.post-btn-icon {
+  width: 60%;
+  transition: all 0.3s linear;
+}
+
+.rotateY {
+  transform: rotateY(360deg);
+}
+
+/*投稿一覧表示*/
+
+.main {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.center-title {
+  font-weight: bold;
+  font-size: 40px;
+  text-decoration: underline;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.center-box{
+  width: 90%;
+  margin: 0 auto;
+  max-width: 80rem;
+  width: calc(100% - 500px);
+}
+
+.cols{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.col{
+  width: calc(25% - 5rem);
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.front:after{
+  position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    content: '';
+    display: block;
+    opacity: .6;
+    background-color: #DDDDDD;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    border-radius: 10px;
+}
+.container:hover .front,
+.container:hover .back{
+    -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+
+.back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.inner{
+  -webkit-transform: translateY(-50%) translateZ(60px) scale(0.94);
+          transform: translateY(-50%) translateZ(60px) scale(0.94);
+  top: 50%;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  padding: 2rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: 1px solid transparent;
+  -webkit-perspective: inherit;
+          perspective: inherit;
+  z-index: 2;
+}
+
+.container .back{
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.container .front{
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.container:hover .back{
+-webkit-transform: rotateY(0deg);
+        transform: rotateY(0deg);
+-webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+}
+
+.container:hover .front{
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.front .inner p{
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.front .inner p:after{
+  content: '';
+  width: 4rem;
+  height: 2px;
+  position: absolute;
+  background: #EEEEEE;
+  display: block;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: -.75rem;
+}
+
+.front .inner span{
+  color: rgba(255,255,255,0.7);
+  font-family: 'Montserrat';
+  font-weight: 300;
+}
+
+@media screen and (max-width: 64rem){
+  .col{
+    width: calc(33.333333% - 2rem);
+  }
+}
+
+@media screen and (max-width: 48rem){
+  .col{
+    width: calc(50% - 2rem);
+  }
+}
+
+@media screen and (max-width: 32rem){
+  .col{
+    width: 100%;
+    margin: 0 0 2rem 0;
+  }
+}
+
+.card_img {
+  margin-bottom: 16px;
+  height: 200px;
+  width: 300px;
+}
+
+.card_summary {
+  font-size: 25px;
+}
+
+.show-form {
+  text-align: right;
+}
+
+.show-btn {
+  margin: 10px 0 0;
+  font-size: 23px;
+}
+
+.show_btn {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  text-decoration: none;
+}
+
+.show_btn:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  transform: translate(-100%, 0);
+  transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.4s;
+  content: "";
+}
+
+.show_btn:hover:after {
+  transform: translate(0, 0);
+}
+
+.user-form {
+  text-align: right;
+}
+
+.card-user {
+  font-size: 25px;
+}
+
+.card_user {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  text-decoration: none;
+}
+
+.card_user:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  transform: translate(-100%, 0);
+  transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.4s;
+  content: "";
+}
+
+.card_user:hover:after {
+  transform: translate(0, 0);
+}
+
+.left-box {
+  width: 250px;
+  padding: 20px;
+}
+
+.right-box {
+  width: 250px;
+  padding: 20px 0 0 40px;
+}
+
+.subject {
+  margin-top: 60px;
+}
+
+.subject-link {
+  list-style: none;
+  margin: 10px 0;
+}
+
+.subject_link {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  color: black;
+  text-decoration: none;
+  font-size: 28px;
+}
+
+.subject_link:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  transform: translate(-100%, 0);
+  transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.4s;
+  content: "";
+}
+
+.subject_link:hover:after {
+  transform: translate(0, 0);
+}

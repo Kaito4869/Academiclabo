@@ -9,8 +9,7 @@
     <div class="new-posts">
       <div class="items-explain">
         <div class="weight-bold-text">
-          タイトルを記入してください
-          <span class="indispensable">必須</span>
+          タイトルを記入してください(必須)
         </div>
         <div class="post-field">
           <%= f.text_area :title, class:"posts-title", id:"post-info", placeholder:"タイトル" %>
@@ -18,8 +17,7 @@
       </div>
       <div class="items-explain">
         <div class="weight-bold-text">
-          投稿文を記入してください
-          <span class="indispensable">必須</span>
+          投稿文を記入してください(必須)
         </div>
         <div class="post-field">
           <%= f.text_area :text, class:"posts-text", id:"post-info", placeholder:"投稿文" %>
@@ -37,8 +35,7 @@
     <div class="psot-detail">
       <div class="grade-form">
         <div class="weight-bold-text">
-          科目を選択してください
-          <span class="indispensable">必須</span>
+          科目を選択してください(必須)
         </div>
         <%= f.collection_select(:subject_id, Subject.all, :id, :name, {}, {class:"grade-select"}) %>
       </div>
