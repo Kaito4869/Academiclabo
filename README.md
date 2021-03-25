@@ -5,7 +5,7 @@
 | Column             | Type                | Options                 |
 |--------------------|---------------------|-------------------------|
 | nickname           | string              | null: false             |
-| occupation         | string              | null: false             |
+| grade_id           | integer             | null: false             |
 | name               | string              | null: false             |
 | email              | string              | null: false             |
 | password           | string              | null: false             |
@@ -47,7 +47,7 @@
 
 | Column      | Type       | Options           |
 |-------------|------------|-------------------|
-| grade_id    | integer    | null: false       |
+| subject_id  | integer    | null: false       |
 
 - has_many :post_tag_relations
 - has_many :posts, through: :post_tag_relations
