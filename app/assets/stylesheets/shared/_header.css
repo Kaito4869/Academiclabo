@@ -13,9 +13,10 @@
 }
 
 .logo {
-  height: 150px;
-  width: 250px;
-  margin-right: 20px;
+  text-decoration: none;
+  color: black;
+  font-size: 50px;
+  font-family: cursive;
 }
 
 .search-form {

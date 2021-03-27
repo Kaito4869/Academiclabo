@@ -32,8 +32,41 @@
   margin-bottom: 20px;
 }
 
-.click-upload {
-  margin-bottom: 20px;
+.file-form {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+  background-color: #fff;
+  border: 2px solid #333;
+  color: #333;
+  line-height: 50px;
+  overflow: hidden;
+  margin-top: 10px;
+  margin-bottom: 60px;
+  width: 150px;
+}
+
+.file-form:hover {
+  color: #fff;
+  background-color: #333;
+}
+.file-form::after {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: scale(.5);
+  transform: scale(.5);
+}
+.file-form:hover::after {
+  background: #333;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.file-form .file_input {
+  display: none;
 }
 
 .posts-text {
