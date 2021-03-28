@@ -72,3 +72,5 @@ gem 'kaminari'
 gem 'seed-fu'
 
 gem 'haml-rails'
+
+gem "aws-sdk-s3", require: false
