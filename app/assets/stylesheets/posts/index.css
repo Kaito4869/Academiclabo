@@ -1,46 +1,3 @@
-.band {
-  height: 400px;
-  width: 100%;
-  background-color: #EEEEEE;
-  margin-bottom: 70px;
-  padding: 20px;
-  display: flex;
-  position: relative;
-}
-
-.center-band {
-  margin: 0 auto;
-}
-
-.band-message1 {
-  font-weight: bold;
-  font-family: arial black;
-  font-size: 60px;
-  margin-top: 20px;
-}
-
-.band-message2 {
-  font-weight: bold;
-  font-family: arial black;
-  font-size: 60px;
-  margin-left: 260px;
-}
-
-.band-message3 {
-  font-size: 40px;
-  font-weight: bold;
-  margin-top: 30px;
-  margin-left: 100px;
-}
-
-.img {
-  margin-top: 4px;
-  position: absolute;
-  width: 36vw;
-  height: 31vh;
-  right: 30px;
-}
-
 /*新規投稿ボタン*/
 
 .post-btn {
@@ -85,6 +42,7 @@
   font-weight: bold;
   font-size: 40px;
   text-decoration: underline;
+  margin-top: 15px;
   margin-bottom: 20px;
   text-align: center;
 }
@@ -206,4 +164,88 @@
 
 .post-btn {
   margin-right: 60px;
+}
+
+.band {
+  height: 400px;
+  width: 100%;
+  background: #444;
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  line-height: 1.3;
+}
+
+#particles {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.overlay {
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+#intro {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  padding: 0 20px;
+  width: 100%;
+  text-align: center;
+}
+.intro-message1 {
+  text-transform: uppercase;
+  font-size: 85px;
+  font-weight: 700;
+  letter-spacing: 0.015em;
+  margin-top: 50px;
+}
+.intro-message2 {
+  margin: 0 0 120px 0;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 1000px) {
+  .intro-message1 {
+    font-size: 70px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .intro-message1 {
+    font-size: 48px;
+  }
+  .intro-message1::after {
+    height: 8px;
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  #intro {
+    padding: 0 10px;
+  }
+  .intro-message1 {
+    font-size: 30px;
+  }
+  .intro-message1::after {
+    height: 6px;
+  }
+  .intro-message2 {
+    font-size: 18px;
+  }
+  .btn {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .intro-message1 {
+    font-size: 28px;
+  }
+  .intro-message1::after {
+    height: 4px;
+  }
 }
