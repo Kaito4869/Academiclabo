@@ -1,41 +1,47 @@
-<div class="new-header">
-  <%= link_to image_tag("26022021154125A.png", class:"logo"), "/" %>
-</div>
-<div class="posts-main">
-  <%= form_with model: @post, local: true do |f| %>
-    <h2 class="new-top">変更情報を入力</h2>
-    <%= render 'shared/error_messages', model: f.object %>
+<div class="body">
+  <div class="bg"></div>
+  <div class="bg bg2"></div>
+  <div class="bg bg3"></div>
+  <div class="content">
+  <div class="new-header">
+    <%= link_to image_tag("26022021154125A.png", class:"logo"), "/" %>
+  </div>
+  <div class="posts-main">
+    <%= form_with model: @post, local: true do |f| %>
+      <h2 class="new-top">変更情報を入力</h2>
+      <%= render 'shared/error_messages', model: f.object %>
 
-    <div class="new-posts">
-      <div class="items-explain">
+      <div class="new-posts">
+        <div class="items-explain">
+          <div class="weight-bold-text">
+            タイトルを記入してください
+            <span class="indispensable">必須</span>
+          </div>
+          <div class="post-field">
+            <%= f.text_area :title, class:"posts-title", id:"post-info", placeholder:"タイトル" %>
+          </div>
+        </div>
+        <div class="items-explain">
+          <div class="weight-bold-text">
+            投稿文を記入してください
+            <span class="indispensable">必須</span>
+          </div>
+          <div class="post-field">
+            <%= f.text_area :text, class:"posts-text", id:"post-info", placeholder:"投稿文" %>
+          </div>
+        </div>
+      </div>
+      <div class="img-upload">
         <div class="weight-bold-text">
-          タイトルを記入してください
-          <span class="indispensable">必須</span>
+          投稿画像をクリックしてファイルをアップロードしてください
         </div>
-        <div class="post-field">
-          <%= f.text_area :title, class:"posts-title", id:"post-info", placeholder:"タイトル" %>
-        </div>
-      </div>
-      <div class="items-explain">
-        <div class="weight-bold-text">
-          投稿文を記入してください
-          <span class="indispensable">必須</span>
-        </div>
-        <div class="post-field">
-          <%= f.text_area :text, class:"posts-text", id:"post-info", placeholder:"投稿文" %>
+        <div class="click-upload">
+          <%= f.file_field :image, id:"post-image" %>
         </div>
       </div>
-    </div>
-    <div class="img-upload">
-      <div class="weight-bold-text">
-        投稿画像をクリックしてファイルをアップロードしてください
+      <div class="post-btn-contents">
+        <%= f.submit "更新する" ,class:"post-create-btn" %>
       </div>
-      <div class="click-upload">
-        <%= f.file_field :image, id:"post-image" %>
-      </div>
-    </div>
-    <div class="post-btn-contents">
-      <%= f.submit "更新する" ,class:"post-create-btn" %>
-    </div>
-  <% end %>
+    <% end %>
+  </div>
 </div>

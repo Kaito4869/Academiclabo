@@ -1,34 +1,40 @@
-<%= render "shared/header" %>
-<div class="band">
-  <div id="particles">
-    <div class="overlay"></div>
-    <div id="intro">
-      <h1 class="intro-message1">WELCOME TO<br>ACADEMICLABO</h1>
-      <p class="intro-message2">〜学問を通して人と人を繋ぐ〜</p>
+<div class="body">
+  <div class="bg"></div>
+  <div class="bg bg2"></div>
+  <div class="bg bg3"></div>
+  <div class="content">
+  <%= render "shared/header" %>
+  <div class="band">
+    <div id="particles">
+      <div class="overlay"></div>
+      <div id="intro">
+        <h1 class="intro-message1">WELCOME TO<br>ACADEMICLABO</h1>
+        <p class="intro-message2">〜学問を通して人と人を繋ぐ〜</p>
+      </div>
     </div>
   </div>
+  <div class='main'>
+    <div class="left-box">
+    </div>
+    <div class="center-box">
+      <h2 class="center-title">NEW POST</h2>
+      <div class="cards">
+        <%= render partial: 'post', collection: @posts %>
+      </div>
+    </div>
+    <div class="right-box">
+      <div class="subject">
+        <%@tags.each do |tag| %>
+            <p class="subject-link"><%= link_to tag.subject.name, post_tags_path(tag), class: "subject_link" %></p>
+        <%end%>
+      </div>
+    </div>
+    <div>
+      <%= link_to(new_post_path, class: 'post-btn') do %>
+        <span class='post-btn-text'>投稿する</span>
+        <%= image_tag 'pencil.png' , size: '185x50' ,class: "post-btn-icon" %>
+      <% end %>
+    </div>
+  </div>
+  <%= render "shared/footer" %>
 </div>
-<div class='main'>
-  <div class="left-box">
-  </div>
-  <div class="center-box">
-    <h2 class="center-title">NEW POST</h2>
-    <div class="cards">
-      <%= render partial: 'post', collection: @posts %>
-    </div>
-  </div>
-  <div class="right-box">
-    <div class="subject">
-      <%@tags.each do |tag| %>
-          <p class="subject-link"><%= link_to tag.subject.name, post_tags_path(tag), class: "subject_link" %></p>
-      <%end%>
-    </div>
-  </div>
-  <div>
-    <%= link_to(new_post_path, class: 'post-btn') do %>
-      <span class='post-btn-text'>投稿する</span>
-      <%= image_tag 'pencil.png' , size: '185x50' ,class: "post-btn-icon" %>
-    <% end %>
-  </div>
-</div>
-<%= render "shared/footer" %>
