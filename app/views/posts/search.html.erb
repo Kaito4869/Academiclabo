@@ -1,26 +1,32 @@
-<div class="header">
-  <div class="new-header">
-    <%= link_to "Academiclabo", "/", class: :logo%>
-  </div>
-  <div class="search-content">
-    <%= form_with(url: search_posts_path, local: true, method: :get, class: "search-form") do |form| %>
-      <%= form.text_field :title, placeholder: "タイトルを検索する", class: "input-box" %>
-      <button class="search-button">
-        <%= image_tag "search.png", class:"search-icon" %>
-      </button>
-    <% end %>
-  </div>
-</div>
-<div class="main">
-  <div class="left-box">
-  </div>
-  <div class="center-box">
-    <div class="contents row">
-      <% @posts.each do |post| %>
-        <%= render partial: 'post', collection: @posts %>
+<div class="body">
+  <div class="bg"></div>
+  <div class="bg bg2"></div>
+  <div class="bg bg3"></div>
+  <div class="content">
+  <div class="header">
+    <div class="new-header">
+      <%= link_to "Academiclabo", "/", class: :logo%>
+    </div>
+    <div class="search-content">
+      <%= form_with(url: search_posts_path, local: true, method: :get, class: "search-form") do |form| %>
+        <%= form.text_field :title, placeholder: "タイトルを検索する", class: "input-box" %>
+        <button class="search-button">
+          <%= image_tag "search.png", class:"search-icon" %>
+        </button>
       <% end %>
     </div>
   </div>
-  <div class="right-box">
+  <div class="main">
+    <div class="left-box">
+    </div>
+    <div class="center-box">
+      <div class="contents row">
+        <% @posts.each do |post| %>
+          <%= render partial: 'post', collection: @posts %>
+        <% end %>
+      </div>
+    </div>
+    <div class="right-box">
+    </div>
   </div>
 </div>
