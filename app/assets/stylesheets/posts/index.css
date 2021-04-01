@@ -8,8 +8,9 @@
   bottom: 30px;
   right: 32px;
   position: fixed;
+  margin-right: 35px;
+  margin-bottom: 10px;
   padding: 15px;
-  margin-right: 30px;
   text-decoration: none;
 }
 
@@ -60,6 +61,7 @@
   height: 100px;
   margin-bottom: 10px;
   padding: 5px;
+  background-color: #fafafa;
 }
 
 .user-form {
@@ -125,7 +127,7 @@
 
 .right-box {
   width: 250px;
-  padding: 20px 0 0 40px;
+  padding: 30px 0 0 80px;
 }
 
 .subject {
@@ -160,10 +162,6 @@
 
 .subject_link:hover:after {
   transform: translate(0, 0);
-}
-
-.post-btn {
-  margin-right: 60px;
 }
 
 .band {
