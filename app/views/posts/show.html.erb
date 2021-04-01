@@ -53,9 +53,13 @@
             </div>
           <% end %> 
           <ul class="comments_lists">
+            <p class="cindex-title">コメント一覧</p>
             <% @comments.each do |comment| %>
               <li class="comments_list">
-                <%= link_to "#{comment.user.nickname}：", "#", class: :comment_user %>
+                <div class="comment-user">
+                  <%= link_to "#{comment.user.nickname}", user_path(@post.user), class: :comment_user %>
+                  <p class="comment-message">さんのコメント</p>
+                </div>
                 <%= comment.text %>
               </li>
             <% end %>
