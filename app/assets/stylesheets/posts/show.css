@@ -53,7 +53,7 @@
 
 .post_image{
   width: 40%;
-  margin: 0 auto;
+  margin: 10px auto;
   padding: 16px 0;
   text-align: center;
 }
@@ -84,7 +84,6 @@
 
 .message-form {
   width: 700px;
-  height: 100px;
 }
 
 .detail_message {
