@@ -167,7 +167,7 @@
 .band {
   height: 400px;
   width: 100%;
-  background: #444;
+  background:linear-gradient(#333,#777);
   font-family: 'Montserrat', sans-serif;
   color: #fff;
   line-height: 1.3;

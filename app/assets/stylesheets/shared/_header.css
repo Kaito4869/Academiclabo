@@ -39,7 +39,7 @@
   height: 5vh;
   border: 0;
   cursor: pointer;
-  background-color: #444;
+  background:linear-gradient(#333,#777);
   padding: 8px;
 }
 
