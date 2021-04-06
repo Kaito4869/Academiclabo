@@ -16,7 +16,6 @@ https://academiclabo.herokuapp.com/
 - Ruby
 - Ruby on Rails
 - JavaScript
-- jQuery
 - MySQL
 - AWS(S3)
 
@@ -27,13 +26,16 @@ https://academiclabo.herokuapp.com/
 - 検索機能
 
 ## 搭載予定機能一覧
+- お問い合わせ機能
 - フォロー機能(Ajax)
 - いいね機能(Ajax)
 - トレンド機能
 - ランキング機能
 - あなたへのおすすめ機能
-
 - iPhone,Android対応
+
+## テスト
+- RSpec(単体テスト(model))
 
 ## DB 設計
 
@@ -90,6 +92,3 @@ https://academiclabo.herokuapp.com/
 
 - has_many :post_tag_relations
 - has_many :posts, through: :post_tag_relations
-
-## テスト
-- RSpec(単体テスト(model))
