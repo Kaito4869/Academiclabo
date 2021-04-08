@@ -7,9 +7,12 @@
     <%= link_to "Academiclabo", "/", class: :logo%>
   </div>
   <div class="user-main">
+    <div class="follow-form">
       <h2 class="page-heading">
         <%= "#{@user.nickname}さんの情報"%>
       </h2>
+      <%= render partial: 'relationships/follow_button', user: @user, class: :follow_button %>
+    </div>
       <table class="table">
         <tbody>
           <tr>
@@ -28,7 +31,5 @@
           <%= render partial: 'posts/post', collection: @user.posts %>
         </div>
       </div>
-  </div>
-  <div class="footer">
   </div>
 </div>
