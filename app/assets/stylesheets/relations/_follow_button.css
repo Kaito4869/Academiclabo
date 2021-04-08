@@ -1,0 +1,30 @@
+.follow-btn {
+  background-color: #fff;
+  color: #333;
+  margin-left: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  width: 150px;
+  height: 50px;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+
+.follow-btn:hover {
+  color: #fff;
+  background-color: #333;
+}
+.follow-btn::after {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: scale(.5);
+  transform: scale(.5);
+}
+.follow-btn:hover::after {
+  background: #333;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}

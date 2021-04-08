@@ -3,6 +3,11 @@
   min-height: calc(100vh - 161px);
 }
 
+.follow-form {
+  display: flex;
+  justify-content: center;
+}
+
 .table{
   border-collapse: collapse;
   margin-bottom: 32px;
@@ -36,6 +41,7 @@
 .page-heading {
   font-size: 30px;
   font-weight: bold;
+  margin-right: 10px;
   margin-bottom: 20px;
   text-align: center;
 }
