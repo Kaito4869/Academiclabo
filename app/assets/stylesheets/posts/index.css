@@ -247,3 +247,40 @@
     height: 4px;
   }
 }
+
+.produce-main-title {
+  font-weight: bold;
+  font-size: 40px;
+  text-decoration: underline;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.produce-box {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.produce {
+  border: 3px solid black;
+  padding: 10px;
+  background-color: #fff;
+}
+
+.produce-title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+.produce-image {
+  width: 450px;
+  height: 250px;
+}
+
+.produce-message {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
