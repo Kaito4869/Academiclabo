@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   root to: "posts#index"
   Rails.application.routes.draw do
     resources :relationships, only: [:create, :destroy]
-  end  
+  end
   resources :labos, only: [:new]
   resources :posts do
     resources :comments, only: [:create]
@@ -12,5 +12,5 @@ Rails.application.routes.draw do
       get 'search'
     end
   end
-  resources :users, only: :show
+  resources :users, only: [:show]
 end
