@@ -2,7 +2,7 @@
 .post_comments{
   background-color: #f6f6f6;
   padding: 20px;
-  margin: 50px auto 100px;
+  margin: 0 auto 100px;
   text-align: center;
   width: 1000px;
 }
@@ -101,7 +101,7 @@
 }
 .post_comment_btn:hover {
   color: #fff;
-  background-color: #333;
+  background:linear-gradient(#333,#777);
 }
 .post_comment_btn::after {
   top: 0;
@@ -112,7 +112,7 @@
   transform: scale(.5);
 }
 .post_comment_btn:hover::after {
-  background: #333;
+  background:linear-gradient(#333,#777);
   -webkit-transform: scale(1);
   transform: scale(1);
 }

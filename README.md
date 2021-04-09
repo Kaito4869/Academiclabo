@@ -20,15 +20,15 @@ https://academiclabo.herokuapp.com/
 - AWS(S3)
 
 ## 機能一覧
-- ユーザー登録、ログイン機能(devise)
+- ユーザー登録、ログイン機能
 - 投稿機能
 - コメント機能
 - 検索機能
+- フォロー機能
 
 ## 搭載予定機能一覧
 - お問い合わせ機能
-- フォロー機能(Ajax)
-- いいね機能(Ajax)
+- いいね機能
 - トレンド機能
 - ランキング機能
 - あなたへのおすすめ機能
@@ -39,7 +39,7 @@ https://academiclabo.herokuapp.com/
 
 ## DB 設計
 
-### users table
+### usersテーブル
 
 | Column             | Type                | Options                 |
 |--------------------|---------------------|-------------------------|
@@ -54,7 +54,19 @@ https://academiclabo.herokuapp.com/
 - has_many :posts
 - has_many :comments
 
-### posts table
+### relationshipsテーブル
+
+| Column              | Type                | Options                 |
+|---------------------|---------------------|-------------------------|
+| user_id             | references          | foreign_key: true       |
+| follow_id           | references          | foreign_key: true       |
+
+#### Association
+
+- belongs_to :user
+- belongs_to :follow, class_name: 'User'
+
+### postsテーブル
 
 | Column                              | Type       | Options           |
 |-------------------------------------|------------|-------------------|
@@ -69,7 +81,29 @@ https://academiclabo.herokuapp.com/
 - has_many :post_tag_relations, dependent: :destroy
 - has_many :tags, through: :post_tag_relations
 
-### comments table
+### post_tag_relationsテーブル
+
+| Column      | Type       | Options           |
+|-------------|------------|-------------------|
+| post_id     | references | foreign_key: true |
+| tag_id      | references | foreign_key: true |
+
+#### Association
+- belongs_to :post
+- belongs_to :tag
+
+### tagsテーブル
+
+| Column      | Type       | Options           |
+|-------------|------------|-------------------|
+| subject_id  | integer    | null: false       |
+
+#### Association
+
+- has_many :post_tag_relations
+- has_many :posts, through: :post_tag_relations
+
+### commentsテーブル
 
 | Column      | Type       | Options           |
 |-------------|------------|-------------------|
@@ -81,14 +115,3 @@ https://academiclabo.herokuapp.com/
 
 - belongs_to :post
 - belongs_to :user
-
-### tags table
-
-| Column      | Type       | Options           |
-|-------------|------------|-------------------|
-| subject_id  | integer    | null: false       |
-
-#### Association
-
-- has_many :post_tag_relations
-- has_many :posts, through: :post_tag_relations

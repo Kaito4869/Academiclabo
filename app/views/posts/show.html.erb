@@ -19,24 +19,26 @@
             <%= link_to "Delete", post_path(@post), method: :delete, class:"post-destroy-btn" %>
           </div>
         <% end %>
-        <div class="post_title">
-          <p class="detail_title">
-            <%= @post.title%>
-          </p>
-        </div>
-        <div class="post_image">
-          <% if @post.image.present? %>
-            <div class="image-form">
-              <%= image_tag @post.image, class: "show-image" %>
-            </div>
-          <% end %>
-        </div>
-        <div class="post_body">
-          <div class="post_detail">
-            <div class="message-form">
-              <p class="detail_message">
-                <%= @post.text %>
-              </p>
+        <div class="show-form">
+          <div class="post_title">
+            <p class="detail_title">
+              <%= @post.title%>
+            </p>
+          </div>
+          <div class="post_image">
+            <% if @post.image.present? %>
+              <div class="image-form">
+                <%= image_tag @post.image, class: "show-image" %>
+              </div>
+            <% end %>
+          </div>
+          <div class="post_body">
+            <div class="post_detail">
+              <div class="message-form">
+                <p class="detail_message">
+                  <%= @post.text %>
+                </p>
+              </div>
             </div>
           </div>
         </div>

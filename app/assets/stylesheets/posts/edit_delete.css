@@ -17,7 +17,7 @@
 }
 .post-edit-btn:hover {
   color: #fff;
-  background-color: #333;
+  background:linear-gradient(#333,#777);
 }
 .post-edit-btn::after {
   top: 0;
@@ -28,7 +28,7 @@
   transform: scale(.5);
 }
 .post-edit-btn:hover::after {
-  background: #333;
+  background:linear-gradient(#333,#777);
   -webkit-transform: scale(1);
   transform: scale(1);
 }
@@ -68,7 +68,7 @@
 }
 .post-destroy-btn:hover {
   color: #fff;
-  background-color: #333;
+  background:linear-gradient(#333,#777);
 }
 .post-destroy-btn::after {
   top: 0;
@@ -79,7 +79,7 @@
   transform: scale(.5);
 }
 .post-destroy-btn:hover::after {
-  background: #333;
+  background:linear-gradient(#333,#777);
   -webkit-transform: scale(1);
   transform: scale(1);
 }
