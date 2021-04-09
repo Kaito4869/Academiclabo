@@ -16,12 +16,30 @@
     <table class="table">
       <tbody>
         <tr>
-          <th class="table_col1">ニックネーム</th>
+          <th class="table_col1">nickname</th>
           <td class="table_col2"><%= @user.nickname %></td>
         </tr>
         <tr>
-          <th class="table_col1">学年</th>
+          <th class="table_col1">grade</th>
           <td class="table_col2"><%= @user.grade.name %></td>
+        </tr>
+        <tr>
+          <th class="table_col1">follow</th>
+          <td class="table_col2">
+            <%= "#{@user.following_ids.count}人 :"%>
+            <% @users1.each do |user| %>
+              <%=link_to "#{user.nickname}", user_path(user) %>
+            <% end %>
+          </td>
+        </tr>
+        <tr>
+          <th class="table_col1">follower</th>
+          <td class="table_col2">
+            <%= "#{@user.follower_ids.count}人 :"%>
+            <% @users2.each do |user| %>
+              <%=link_to "#{user.nickname}", user_path(user) %>
+            <% end %>
+          </td>
         </tr>
       </tbody>
     </table>
