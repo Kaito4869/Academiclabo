@@ -13,23 +13,23 @@
       </h2>
       <%= render partial: 'relationships/follow_button', user: @user, class: :follow_button %>
     </div>
-      <table class="table">
-        <tbody>
-          <tr>
-            <th class="table_col1">ニックネーム</th>
-            <td class="table_col2"><%= @user.nickname %></td>
-          </tr>
-          <tr>
-            <th class="table_col1">学年</th>
-            <td class="table_col2"><%= @user.grade.name %></td>
-          </tr>
-        </tbody>
-      </table>
-      <div class="center-box">
-        <h2 class="center-title"><%= "#{@user.nickname}さんの投稿" %></h2>
-        <div class="cols">
-          <%= render partial: 'posts/post', collection: @user.posts %>
-        </div>
+    <table class="table">
+      <tbody>
+        <tr>
+          <th class="table_col1">ニックネーム</th>
+          <td class="table_col2"><%= @user.nickname %></td>
+        </tr>
+        <tr>
+          <th class="table_col1">学年</th>
+          <td class="table_col2"><%= @user.grade.name %></td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="center-box">
+      <h2 class="center-title"><%= "#{@user.nickname}さんの投稿" %></h2>
+      <div class="cols">
+        <%= render partial: 'posts/post', collection: @user.posts %>
       </div>
+    </div>
   </div>
 </div>
