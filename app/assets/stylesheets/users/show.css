@@ -38,9 +38,52 @@
   font-size: 20px;
 }
 
-.follow-link {
+.follow_link {
   text-decoration: none;
   color: black;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+
+.follow_link:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  transform: translate(-100%, 0);
+  transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.4s;
+  content: "";
+}
+
+.follow_link:hover:after {
+  transform: translate(0, 0);
+}
+
+.follower_link {
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+
+.follower_link:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  transform: translate(-100%, 0);
+  transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.4s;
+  content: "";
+}
+
+.follower_link:hover:after {
+  transform: translate(0, 0);
 }
 
 .page-heading {

@@ -1,0 +1,25 @@
+<div class="body">
+  <div class="bg"></div>
+  <div class="bg bg2"></div>
+  <div class="bg bg3"></div>
+  <div class="content">
+  <div class="new-header">
+    <%= link_to "Academiclabo", "/", class: :logo%>
+  </div>
+    <div class='main'>
+    <div class="left-box">
+    </div>
+    <div class="center-box">
+      <h2 class="center-title">Follow</h2>
+      <div class="user-card">
+        <% @users1.each do |user| %>
+          <li class="follow-lists">
+            <%=link_to "#{user.nickname}", user_path(user), class: :user_link %>
+          </li>
+        <% end %>
+      </div>
+    </div>
+    <div class="right-box">
+    </div>
+  </div>
+</div>

@@ -16,29 +16,23 @@
     <table class="table">
       <tbody>
         <tr>
-          <th class="table_col1">nickname</th>
+          <th class="table_col1">ニックネーム</th>
           <td class="table_col2"><%= @user.nickname %></td>
         </tr>
         <tr>
-          <th class="table_col1">grade</th>
+          <th class="table_col1">学年</th>
           <td class="table_col2"><%= @user.grade.name %></td>
         </tr>
         <tr>
-          <th class="table_col1">follow</th>
+          <th class="table_col1"><%= link_to "フォロー", follow_path, class: :follow_link %></th>
           <td class="table_col2">
-            <%= "#{@user.following_ids.count}人 :"%>
-            <% @users1.each do |user| %>
-              <%=link_to "#{user.nickname}", user_path(user) %>
-            <% end %>
+            <%= link_to "#{@user.following_ids.count}人", follow_path, class: :follow_link %>
           </td>
         </tr>
         <tr>
-          <th class="table_col1">follower</th>
+          <th class="table_col1"><%= link_to "フォロワー", follow_path, class: :follow_link %></th>
           <td class="table_col2">
-            <%= "#{@user.follower_ids.count}人 :"%>
-            <% @users2.each do |user| %>
-              <%=link_to "#{user.nickname}", user_path(user) %>
-            <% end %>
+            <%= link_to "#{@user.follower_ids.count}人", follower_path, class: :follower_link %>
           </td>
         </tr>
       </tbody>

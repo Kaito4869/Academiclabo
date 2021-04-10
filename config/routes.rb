@@ -4,7 +4,6 @@ Rails.application.routes.draw do
   Rails.application.routes.draw do
     resources :relationships, only: [:create, :destroy]
   end
-  resources :labos, only: [:new]
   resources :posts do
     resources :comments, only: [:create]
     resources :tags, only: [:index]
@@ -13,4 +12,7 @@ Rails.application.routes.draw do
     end
   end
   resources :users, only: [:show]
+  resources :labos, only: [:new]
+  resources :follows, only: [:show]
+  resources :followers, only: [:show]
 end
