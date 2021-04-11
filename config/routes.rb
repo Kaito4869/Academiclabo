@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :contacts
   devise_for :users
   root to: "posts#index"
   Rails.application.routes.draw do
@@ -13,6 +14,7 @@ Rails.application.routes.draw do
   end
   resources :users, only: [:show]
   resources :labos, only: [:new]
+  resources :news, only: [:new]
   resources :follows, only: [:show]
   resources :followers, only: [:show]
 end

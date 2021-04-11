@@ -94,6 +94,10 @@
   text-align: center;
 }
 
+.center-box {
+  margin-bottom: 100px;
+}
+
 .user_card {
   width: 90%;
   margin: 0 auto;

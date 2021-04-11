@@ -31,8 +31,8 @@ https://academiclabo.herokuapp.com/
 - いいね機能
 - トレンド機能
 - ランキング機能
+- フォローしているユーザーの投稿のみトップページに表示する機能
 - あなたへのおすすめ機能
-- iPhone,Android対応
 
 ## テスト
 - RSpec(単体テスト(model))
