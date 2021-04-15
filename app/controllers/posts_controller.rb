@@ -15,13 +15,14 @@ class PostsController < ApplicationController
   def show
     @comment = Comment.new
     @comments = @post.comments
+    @like = Like.new
   end
 
   def create
     @post = PostsTag.new(post_params)
     if @post.valid? 
       @post.save
-      redirect_to root_path
+      redirect_back(fallback_location: root_path)
     else
       render :new
     end
