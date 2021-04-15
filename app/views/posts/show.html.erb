@@ -19,6 +19,14 @@
             <%= link_to "Delete", post_path(@post), method: :delete, class:"post-destroy-btn" %>
           </div>
         <% end %>
+        <div class="good-form">
+          <h3 class="good-count">いいね件数:<%= @post.likes.count %></h3>
+          <% if current_user.already_liked?(@post) %>
+            <%= button_to 'cancel', post_like_path(@post), method: :delete, class: "good-btn" %>
+          <% else %>
+            <%= button_to ' good ', post_likes_path(@post), class: "good-btn" %>
+          <% end %>
+        </div>
         <div class="show-form">
           <div class="post_title">
             <p class="detail_title">

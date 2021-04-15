@@ -5,6 +5,8 @@ class Post < ApplicationRecord
   has_many :comments, dependent: :destroy
   has_many :post_tag_relations, dependent: :destroy
   has_many :tags, through: :post_tag_relations, dependent: :destroy
+  has_many :likes
+  has_many :liked_users, through: :likes, source: :user
 
   with_options presence: true do
     validates :title

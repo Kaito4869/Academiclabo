@@ -6,6 +6,7 @@ Rails.application.routes.draw do
     resources :relationships, only: [:create, :destroy]
   end
   resources :posts do
+    resources :likes, only: [:create, :destroy]
     resources :comments, only: [:create]
     resources :tags, only: [:index]
     collection do
