@@ -33,6 +33,12 @@
   </div>
   <div class='main'>
     <div class="left-box">
+      <div class="lank">
+        <h1 class="lank-title">人気記事</h1>
+        <%@all_ranks.each do |post| %>
+          <p class="lank-link"><%= link_to post.title, post_path(post), class: "lank_link" %></p>
+        <%end%>
+      </div>
     </div>
     <div class="center-box">
       <h2 class="center-title">NEW POST</h2>
@@ -42,6 +48,7 @@
     </div>
     <div class="right-box">
       <div class="subject">
+        <h1 class="subject-title">科目</h1>
         <%@tags.each do |tag| %>
             <p class="subject-link"><%= link_to tag.subject.name, post_tags_path(tag), class: "subject_link" %></p>
         <%end%>

@@ -4,8 +4,9 @@ class PostsController < ApplicationController
   before_action :contributor_confirmation, only: [:edit, :update, :destroy]
 
   def index
-    @posts = Post.includes(:user).order('created_at DESC')
+    @posts = Post.includes(:user).order('created_at DESC').limit(20)
     @tags = Tag.all.order('subject_id ASC')
+    @all_ranks = Post.find(Like.group(:post_id).order('count(post_id) desc').limit(10).pluck(:post_id))
   end
 
   def new
@@ -22,7 +23,7 @@ class PostsController < ApplicationController
     @post = PostsTag.new(post_params)
     if @post.valid? 
       @post.save
-      redirect_back(fallback_location: root_path)
+      redirect_to root_path
     else
       render :new
     end
