@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
   before_action :set_post, except: [:index, :new, :create, :search]
-  before_action :authenticate_user!, except: [:index, :show, :search]
+  before_action :authenticate_user!, except: [:index]
   before_action :contributor_confirmation, only: [:edit, :update, :destroy]
 
   def index
