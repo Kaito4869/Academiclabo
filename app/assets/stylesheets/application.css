@@ -21,6 +21,11 @@
     height: 3vh;
   }
 
+  .search-form>.input-box {
+    width: 100%;
+    height: 3vh;
+  }
+
   .search-button {
     width: 3vh;
     height: 3vh;
@@ -30,6 +35,11 @@
  /* スマホ表示 */
 @media (max-width: 599px) {
   .search-form {
+    width: 100%;
+    height: 3vh;
+  }
+
+  .search-form>.input-box {
     width: 100%;
     height: 3vh;
   }
