@@ -16,6 +16,13 @@
 
  /* タブレット対応 */
 @media (max-width: 1024px) {
+  .top-contents {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+
   .search-form {
     width: 100%;
     height: 3vh;
@@ -29,11 +36,67 @@
   .search-button {
     width: 3vh;
     height: 3vh;
+  }
+
+  .left-box {
+    width: 250px;
+    padding: 30px 10px 0 10px;
+  }
+
+  .lank-title {
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: underline 3px;
+  }
+
+  .lank-link {
+    list-style: none;
+    margin: 10px 0;
+    font-size: 25px;
+  }
+
+  .center-box{
+    margin: 0 auto;
+    max-width: 100rem;
+    width: calc(100% - 500px);
+  }
+
+  .right-box {
+    width: 250px;
+    padding: 30px 10px 0 10px;
+  }
+
+  .subject-title {
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: underline 3px;
+  }
+  
+  .subject-link {
+    list-style: none;
+    margin: 10px 0;
+    font-size: 25px;
+  }
+
+  .card {
+    border: 1px solid black;
+    width: 100%;
+    height: 80px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #fafafa;
   }
 }
 
  /* スマホ表示 */
 @media (max-width: 599px) {
+  .top-contents {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+
   .search-form {
     width: 100%;
     height: 3vh;
@@ -47,5 +110,30 @@
   .search-button {
     width: 3vh;
     height: 3vh;
+  }
+
+  .left-box {
+    width: 250px;
+    padding: 30px 10px 0 10px;
+  }
+
+  .center-box{
+    margin: 0 auto;
+    max-width: 100rem;
+    width: calc(100% - 500px);
+  }
+
+  .right-box {
+    width: 250px;
+    padding: 30px 10px 0 10px;
+  }
+
+  .card {
+    border: 1px solid black;
+    width: 100%;
+    height: 80px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #fafafa;
   }
 }

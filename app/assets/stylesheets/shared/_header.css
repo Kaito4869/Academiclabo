@@ -9,7 +9,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .logo {
@@ -24,7 +24,7 @@
   height: 5vh;
   display: flex;
   text-align: center;
-  margin: 0 auto;
+  margin: 0 auto 20px;
 }
 
 .search-form>.input-box {
