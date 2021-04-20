@@ -315,7 +315,7 @@
 
 .produce {
   border: 3px solid black;
-  padding: 10px 80px;
+  padding: 10px;
   background-color: #fff;
   width: calc(100% / 3);
 }
