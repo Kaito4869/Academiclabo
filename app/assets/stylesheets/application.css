@@ -30,6 +30,11 @@
     font-family: cursive;
   }
 
+  .lists-right {
+    display: flex;
+    align-items: center;
+  }
+
   .user_nickname {
     display: inline-block;
     position: relative;
@@ -263,6 +268,11 @@
     color: black;
     font-size: 60px;
     font-family: cursive;
+  }
+
+  .lists-right {
+    display: flex;
+    align-items: center;
   }
 
   .user_nickname {
