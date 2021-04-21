@@ -14,3 +14,472 @@
  *= require_self
  */
  
+ /* タブレット対応 */
+@media (max-width: 1024px) {
+  .top-contents {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  .logo {
+    text-decoration: none;
+    color: black;
+    font-size: 60px;
+    font-family: cursive;
+  }
+
+  .user_nickname {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    color: black;
+    text-decoration: none;
+    font-size: 40px;
+  }
+
+  .user_logout {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    color: black;
+    text-decoration: none;
+    font-size: 40px;
+  }
+
+  .user_login {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    color: black;
+    text-decoration: none;
+    font-size: 40px;
+  }
+
+  .user_sign-up {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    color: black;
+    text-decoration: none;
+    font-size: 40px;
+  }
+
+  .search-form {
+    width: 100%;
+    height: 3vh;
+    margin: 0 auto;
+  }
+
+  .search-form>.input-box {
+    width: 100%;
+    height: 3vh;
+    font-size: 40px;
+  }
+
+  .search-button {
+    width: 3vh;
+    height: 3vh;
+  }
+
+  .produce-title {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+  }
+
+  .intro-message1 {
+    text-transform: uppercase;
+    font-size: 80px;
+    font-weight: 700;
+    letter-spacing: 0.015em;
+    margin-top: 120px;
+  }
+  .intro-message2 {
+    margin: 0 0 120px 0;
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  .left-box {
+    margin: 0 auto;
+    width: 250px;
+    padding: 30px 10px 0 10px;
+  }
+
+  .lank-title {
+    font-size: 40px;
+    font-weight: bold;
+    text-decoration: underline 3px;
+    text-align: center;
+  }
+
+  .lank-link {
+    list-style: none;
+    margin: 10px 0;
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .center-box{
+    margin: 0 auto;
+    max-width: 100rem;
+    width: calc(100% - 500px);
+  }
+
+  .center-title {
+    font-weight: bold;
+    font-size: 50px;
+    text-decoration: underline;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .card {
+    border: 1px solid black;
+    width: 100%;
+    height: 300px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #fafafa;
+  }
+
+  .user-form {
+    display: flex;
+    font-size: 20px;
+  }
+
+  .card_show {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+  .right-box {
+    margin: 0 auto;
+    width: 250px;
+    padding: 30px 10px 0 10px;
+  }
+
+  .subject-title {
+    font-size: 40px;
+    font-weight: bold;
+    text-decoration: underline 3px;
+    text-align: center;
+  }
+  
+  .subject-link {
+    list-style: none;
+    margin: 10px 0;
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .card {
+    border: 1px solid black;
+    width: 100%;
+    height: 80px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #fafafa;
+  }
+
+  .labo_show {
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .footer_logo {
+    text-decoration: none;
+    color: #fff;
+    font-size: 70px;
+    font-family: cursive;
+  }
+
+  .contact {
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .post-btn {
+    width: 200px;
+    background: #fff;
+    text-align: center;
+    border-radius: 50%;
+    bottom: 30px;
+    right: 32px;
+    position: fixed;
+    margin-right: 35px;
+    margin-bottom: 10px;
+    padding: 20px;
+    text-decoration: none;
+  }
+  
+  .post-btn-text {
+    color: black;
+    display: block;
+    font-size: 25px;
+    text-decoration: none;
+    margin-bottom: 15px;
+  }
+  
+  .post-btn-icon {
+    width: 80%;
+    height: 95px;
+    transition: all 0.3s linear;
+  }
+  
+  .rotateY {
+    transform: rotateY(360deg);
+  }
+}
+
+ /* スマホ表示 */
+@media (max-width: 599px) {
+  .top-contents {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  .logo {
+    text-decoration: none;
+    color: black;
+    font-size: 60px;
+    font-family: cursive;
+  }
+
+  .user_nickname {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    color: black;
+    text-decoration: none;
+    font-size: 40px;
+  }
+
+  .user_logout {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    color: black;
+    text-decoration: none;
+    font-size: 40px;
+  }
+
+  .user_login {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    color: black;
+    text-decoration: none;
+    font-size: 40px;
+  }
+
+  .user_sign-up {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    color: black;
+    text-decoration: none;
+    font-size: 40px;
+  }
+
+  .search-form {
+    width: 100%;
+    height: 3vh;
+    margin: 0 auto;
+  }
+
+  .search-form>.input-box {
+    width: 100%;
+    height: 3vh;
+    font-size: 40px;
+  }
+
+  .search-button {
+    width: 3vh;
+    height: 3vh;
+  }
+
+  .produce-title {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+  }
+
+  .intro-message1 {
+    text-transform: uppercase;
+    font-size: 80px;
+    font-weight: 700;
+    letter-spacing: 0.015em;
+    margin-top: 120px;
+  }
+  .intro-message2 {
+    margin: 0 0 120px 0;
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  .left-box {
+    width: 250px;
+    padding: 30px 10px 0 10px;
+    margin: 0 auto;
+  }
+
+  .lank-title {
+    font-size: 40px;
+    font-weight: bold;
+    text-decoration: underline 3px;
+    text-align: center;
+  }
+
+  .lank-link {
+    list-style: none;
+    margin: 10px 0;
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .center-box{
+    margin: 0 auto;
+    max-width: 100rem;
+    width: calc(100% - 500px);
+  }
+
+  .center-title {
+    font-weight: bold;
+    font-size: 50px;
+    text-decoration: underline;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .card {
+    border: 1px solid black;
+    width: 100%;
+    height: 300px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #fafafa;
+  }
+
+  .user-form {
+    display: flex;
+    font-size: 20px;
+  }
+
+  .card_show {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+  .right-box {
+    width: 250px;
+    padding: 30px 10px 0 10px;
+    margin: 0 auto;
+  }
+
+  .subject-title {
+    font-size: 40px;
+    font-weight: bold;
+    text-decoration: underline 3px;
+    text-align: center;
+  }
+  
+  .subject-link {
+    list-style: none;
+    margin: 10px 0;
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .card {
+    border: 1px solid black;
+    width: 100%;
+    height: 80px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #fafafa;
+  }
+
+  .labo_show {
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .footer_logo {
+    text-decoration: none;
+    color: #fff;
+    font-size: 70px;
+    font-family: cursive;
+  }
+
+  .contact {
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .post-btn {
+    width: 200px;
+    background: #fff;
+    text-align: center;
+    border-radius: 50%;
+    bottom: 30px;
+    right: 32px;
+    position: fixed;
+    margin-right: 35px;
+    margin-bottom: 10px;
+    padding: 20px;
+    text-decoration: none;
+  }
+  
+  .post-btn-text {
+    color: black;
+    display: block;
+    font-size: 25px;
+    text-decoration: none;
+    margin-bottom: 15px;
+  }
+  
+  .post-btn-icon {
+    width: 80%;
+    height: 95px;
+    transition: all 0.3s linear;
+  }
+  
+  .rotateY {
+    transform: rotateY(360deg);
+  }
+}
