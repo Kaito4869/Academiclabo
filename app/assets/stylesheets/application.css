@@ -23,6 +23,49 @@
     margin-bottom: 50px;
   }
 
+  .logo {
+    text-decoration: none;
+    color: black;
+    font-size: 70px;
+    font-family: cursive;
+  }
+
+  .user_nickname {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    color: black;
+    text-decoration: none;
+    font-size: 50px;
+  }
+
+  .user_logout {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    color: black;
+    text-decoration: none;
+    font-size: 50px;
+  }
+
+  .user_login {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    color: black;
+    text-decoration: none;
+    font-size: 50px;
+  }
+
+  .user_sign-up {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    color: black;
+    text-decoration: none;
+    font-size: 50px;
+  }
+
   .search-form {
     width: 100%;
     height: 3vh;
@@ -32,11 +75,31 @@
   .search-form>.input-box {
     width: 100%;
     height: 3vh;
+    font-size: 40px;
   }
 
   .search-button {
     width: 3vh;
     height: 3vh;
+  }
+
+  .produce-title {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+  }
+
+  .intro-message1 {
+    text-transform: uppercase;
+    font-size: 100px;
+    font-weight: 700;
+    letter-spacing: 0.015em;
+    margin-top: 120px;
+  }
+  .intro-message2 {
+    margin: 0 0 120px 0;
+    font-size: 50px;
+    font-weight: bold;
   }
 
   .left-box {
@@ -73,6 +136,21 @@
     text-align: center;
   }
 
+  .user-form {
+    display: flex;
+    margin-bottom: 10px;
+    font-size: 30px;
+  }
+
+  .card_show {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    color: black;
+    text-decoration: none;
+    font-size: 30px;
+  }
+
   .right-box {
     width: 250px;
     padding: 30px 10px 0 10px;
@@ -99,6 +177,65 @@
     margin-bottom: 10px;
     padding: 10px;
     background-color: #fafafa;
+  }
+
+  .labo_show {
+    text-decoration: none;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .footer_logo {
+    text-decoration: none;
+    color: #fff;
+    font-size: 70px;
+    font-family: cursive;
+  }
+
+  .contact {
+    text-decoration: none;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .post-btn {
+    width: 200px;
+    background: #fff;
+    text-align: center;
+    border-radius: 50%;
+    bottom: 30px;
+    right: 32px;
+    position: fixed;
+    margin-right: 35px;
+    margin-bottom: 10px;
+    padding: 20px;
+    text-decoration: none;
+  }
+  
+  .post-btn-text {
+    color: black;
+    display: block;
+    font-size: 25px;
+    text-decoration: none;
+    margin-bottom: 15px;
+  }
+  
+  .post-btn-icon {
+    width: 80%;
+    height: 95px;
+    transition: all 0.3s linear;
+  }
+  
+  .rotateY {
+    transform: rotateY(360deg);
   }
 }
 
@@ -111,6 +248,49 @@
     margin-bottom: 60px;
   }
 
+  .logo {
+    text-decoration: none;
+    color: black;
+    font-size: 70px;
+    font-family: cursive;
+  }
+
+  .user_nickname {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    color: black;
+    text-decoration: none;
+    font-size: 50px;
+  }
+
+  .user_logout {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    color: black;
+    text-decoration: none;
+    font-size: 50px;
+  }
+
+  .user_login {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    color: black;
+    text-decoration: none;
+    font-size: 50px;
+  }
+
+  .user_sign-up {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    color: black;
+    text-decoration: none;
+    font-size: 50px;
+  }
+
   .search-form {
     width: 100%;
     height: 3vh;
@@ -120,11 +300,31 @@
   .search-form>.input-box {
     width: 100%;
     height: 3vh;
+    font-size: 40px;
   }
 
   .search-button {
     width: 3vh;
     height: 3vh;
+  }
+
+  .produce-title {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+  }
+
+  .intro-message1 {
+    text-transform: uppercase;
+    font-size: 100px;
+    font-weight: 700;
+    letter-spacing: 0.015em;
+    margin-top: 120px;
+  }
+  .intro-message2 {
+    margin: 0 0 120px 0;
+    font-size: 50px;
+    font-weight: bold;
   }
 
   .left-box {
@@ -161,6 +361,21 @@
     text-align: center;
   }
 
+  .user-form {
+    display: flex;
+    margin-bottom: 10px;
+    font-size: 30px;
+  }
+
+  .card_show {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    color: black;
+    text-decoration: none;
+    font-size: 30px;
+  }
+
   .right-box {
     width: 250px;
     padding: 30px 10px 0 10px;
@@ -187,5 +402,64 @@
     margin-bottom: 10px;
     padding: 10px;
     background-color: #fafafa;
+  }
+
+  .labo_show {
+    text-decoration: none;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .footer_logo {
+    text-decoration: none;
+    color: #fff;
+    font-size: 70px;
+    font-family: cursive;
+  }
+
+  .contact {
+    text-decoration: none;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .post-btn {
+    width: 200px;
+    background: #fff;
+    text-align: center;
+    border-radius: 50%;
+    bottom: 30px;
+    right: 32px;
+    position: fixed;
+    margin-right: 35px;
+    margin-bottom: 10px;
+    padding: 20px;
+    text-decoration: none;
+  }
+  
+  .post-btn-text {
+    color: black;
+    display: block;
+    font-size: 25px;
+    text-decoration: none;
+    margin-bottom: 15px;
+  }
+  
+  .post-btn-icon {
+    width: 80%;
+    height: 95px;
+    transition: all 0.3s linear;
+  }
+  
+  .rotateY {
+    transform: rotateY(360deg);
   }
 }

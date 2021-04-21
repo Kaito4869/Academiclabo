@@ -62,10 +62,7 @@
 .user-nickname {
   list-style: none;
   margin: 10px 0;
-  text-decoration: none;
   margin-right: 3vw;
-  color: #333333;
-  font-size: 25px;
 }
 
 .user_nickname {
@@ -96,9 +93,6 @@
 .user-logout {
   list-style: none;
   margin: 10px 0;
-  text-decoration: none;
-  color: #333333;
-  font-size: 25px;
 }
 
 .user_logout {
@@ -129,10 +123,7 @@
 .user-login {
   list-style: none;
   margin: 10px 0;
-  text-decoration: none;
   margin-right: 3vh;
-  color: #333333;
-  font-size: 25px;
 }
 
 .user_login {
@@ -163,9 +154,6 @@
 .user-sign-up {
   list-style: none;
   margin: 10px 0;
-  text-decoration: none;
-  color: #333333;
-  font-size: 25px;
 }
 
 .user_sign-up {
