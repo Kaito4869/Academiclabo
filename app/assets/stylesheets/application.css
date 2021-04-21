@@ -40,19 +40,20 @@
 
   .left-box {
     width: 250px;
-    padding: 30px 10px 0 10px;
+    padding: 30px 10px 0 60px;
   }
 
   .lank-title {
-    font-size: 30px;
+    font-size: 40px;
     font-weight: bold;
     text-decoration: underline 3px;
+    text-align: center;
   }
 
   .lank-link {
     list-style: none;
     margin: 10px 0;
-    font-size: 25px;
+    font-size: 30px;
   }
 
   .center-box{
@@ -61,21 +62,31 @@
     width: calc(100% - 500px);
   }
 
+  .center-title {
+    font-weight: bold;
+    font-size: 50px;
+    text-decoration: underline;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
   .right-box {
     width: 250px;
-    padding: 30px 10px 0 10px;
+    padding: 30px 60px 0 10px;
   }
 
   .subject-title {
-    font-size: 30px;
+    font-size: 40px;
     font-weight: bold;
     text-decoration: underline 3px;
+    text-align: center;
   }
   
   .subject-link {
     list-style: none;
     margin: 10px 0;
-    font-size: 25px;
+    font-size: 30px;
   }
 
   .card {
@@ -94,7 +105,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
   }
 
   .search-form {
@@ -118,7 +129,7 @@
   }
 
   .lank-title {
-    font-size: 30px;
+    font-size: 40px;
     font-weight: bold;
     text-decoration: underline 3px;
   }
@@ -126,7 +137,7 @@
   .lank-link {
     list-style: none;
     margin: 10px 0;
-    font-size: 25px;
+    font-size: 30px;
   }
 
   .center-box{
@@ -135,13 +146,22 @@
     width: calc(100% - 500px);
   }
 
+  .center-title {
+    font-weight: bold;
+    font-size: 50px;
+    text-decoration: underline;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
   .right-box {
     width: 250px;
     padding: 30px 10px 0 10px;
   }
 
   .subject-title {
-    font-size: 30px;
+    font-size: 40px;
     font-weight: bold;
     text-decoration: underline 3px;
   }
@@ -149,7 +169,7 @@
   .subject-link {
     list-style: none;
     margin: 10px 0;
-    font-size: 25px;
+    font-size: 30px;
   }
 
   .card {
