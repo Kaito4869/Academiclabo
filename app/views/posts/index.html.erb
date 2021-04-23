@@ -18,17 +18,17 @@
     <div class="produce">
       <h2 class="produce-title">STEP1</h2>
       <%= image_tag "スクリーンショット 2021-04-06 17.43.58.png", class:"produce-image" %>
-      <p class="produce-message">新規登録/ログイン</p>
+      <p class="produce-message">最初に新規登録/ログインをする</p>
     </div>
     <div class="produce">
       <h2 class="produce-title">STEP2</h2>
       <%= image_tag "スクリーンショット 2021-04-06 17.44.30.png", class:"produce-image" %>
-      <p class="produce-message">投稿</p>
+      <p class="produce-message">次に投稿する</p>
     </div>
     <div class="produce">
       <h2 class="produce-title">STEP3</h2>
       <%= image_tag "スクリーンショット 2021-04-08 19.15.42.png", class:"produce-image" %>
-      <p class="produce-message">コメント</p>
+      <p class="produce-message">最後にコメントしてもらう</p>
     </div>
   </div>
   <div class='main'>
@@ -36,7 +36,12 @@
       <div class="lank">
         <h1 class="lank-title">人気記事</h1>
         <%@all_ranks.each do |post| %>
-          <p class="lank-link"><%= link_to post.title, post_path(post), class: "lank_link" %></p>
+          <div class="lank-link">
+            <div class="lank-form">
+              <%= link_to post.user.nickname, user_path(post.user), class: "lank_user"%>
+            </div>
+            <%= link_to post.title, post_path(post), class: "lank_link" %>
+          </div>
         <%end%>
       </div>
     </div>
