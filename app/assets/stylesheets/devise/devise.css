@@ -7,6 +7,13 @@
   margin: 40px auto 40px;
 }
 
+.second_logo {
+  text-decoration: none;
+  color: black;
+  font-size: 50px;
+  font-family: cursive;
+}
+
 .registration-main {
   width: 100%;
   min-width: 800px;
@@ -78,6 +85,7 @@
 .info-text2 {
   font-size: 15px;
   margin-bottom: 20px;
+  overflow-wrap: break-word;
 }
 
 .form-info-header {
@@ -113,7 +121,7 @@
 .register_btn {
   position: relative;
   z-index: 2;
-  background-color: transparent;
+  background-color: #fff;
   border: 2px solid #333;
   color: #333;
   line-height: 50px;
